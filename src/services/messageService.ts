@@ -1,6 +1,6 @@
-import messageDao from '@daos/messageDao';
+import * as messageDao from '@daos/index';
 
 const getAllMessages = async () => messageDao.findAll();
 const createMessage = async (text: string) => messageDao.create(text);
 
-export default { getAllMessages, createMessage };
+export  { getAllMessages, createMessage };

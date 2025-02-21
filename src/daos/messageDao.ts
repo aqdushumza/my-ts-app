@@ -1,6 +1,8 @@
-import { Message } from '@models/message';
+import { Message } from '@models/index';
 
-const findAll = async () => await Message.findAll();
 const create = async (text: string) => await Message.create({ text });
+async function findAll(): Promise<Message[]> {
+  return  await Message.findAll();
 
-export default { findAll, create };
+}
+export  { findAll, create };

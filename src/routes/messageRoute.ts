@@ -1,11 +1,12 @@
 import express from 'express';
-import messageController from '@controllers/messageController';
+import * as MessageController from '@controllers/index';
+
 function messageRoute(){
     console.log("kdndfbdjfbjdbf");
     const router = express.Router();
     console.log(router)
-    router.get('/', messageController.getMessages);
-    router.post('/', messageController.createMessage);
+    router.get('/', MessageController.getMessages);
+    router.post('/', MessageController.createMessage);
     return router;
 }
 

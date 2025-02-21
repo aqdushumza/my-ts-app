@@ -1,6 +1,6 @@
 import express from 'express';
 import { sequelize } from '@database/index';
-import messageRoute from './routes/messageRoute';
+import  messageRoute  from '@routes/index';
 console.log("---------------->>>>>>>");
 
 
